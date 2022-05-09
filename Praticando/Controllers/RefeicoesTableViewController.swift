@@ -35,6 +35,7 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicoesDele
         tableView.reloadData()
         RefeicaoDao().save(refeicoes)
     }
+    
     @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer){
         //ver o estado que o objeto está em relacao a celula
         if gesture.state == .began   {

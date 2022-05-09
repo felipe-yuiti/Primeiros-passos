@@ -50,5 +50,4 @@ class AdicionarItensViewController: UIViewController {
             navigationController?.popViewController(animated: true)
         }
     }
-    //MARK: - IBOutlets
 }

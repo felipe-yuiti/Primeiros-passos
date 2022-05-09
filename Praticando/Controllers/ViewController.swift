@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
         navigationItem.rightBarButtonItem = botaoAdicionaItem
         recuperaItens()
     }
+    
     func recuperaItens(){
         itens = ItemDao().recupera()
     }
@@ -83,6 +84,7 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
             }
         }
     }
+    
     func recuperaRefeicaoDoFormulario() -> Refeicao?{
         guard let nomeDaRefeicao = nomeTextField?.text else {return nil}
         guard let felicidadeDaRefeicao = felicidadeTextField?.text,
